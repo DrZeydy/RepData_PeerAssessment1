@@ -9,7 +9,7 @@ output: html_document
 
 1. Load the data (i.e. read.csv())
 ```{r}
-activity <- read.csv("./data/activity.csv", stringsAsFactors=FALSE)
+activity <- read.csv(unz("activity.zip", "activity.csv"), stringsAsFactors=FALSE)
 
 ```
 

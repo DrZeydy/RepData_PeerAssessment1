@@ -63,7 +63,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <ol style="list-style-type: decimal">
 <li>Load the data (i.e. read.csv())</li>
 </ol>
-<pre class="r"><code>activity &lt;- read.csv(&quot;./data/activity.csv&quot;, stringsAsFactors=FALSE)</code></pre>
+<pre class="r"><code>activity &lt;- read.csv(unz(&quot;activity.zip&quot;, &quot;activity.csv&quot;), stringsAsFactors=FALSE)</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Process/transform the data (if necessary) into a format suitable for your analysis</li>
 </ol>
